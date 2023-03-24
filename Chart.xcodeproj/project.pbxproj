@@ -13,6 +13,12 @@
 		7647E6B629CC3188009179E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7647E6B429CC3188009179E9 /* Main.storyboard */; };
 		7647E6B829CC318A009179E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7647E6B729CC318A009179E9 /* Assets.xcassets */; };
 		7647E6BB29CC318A009179E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7647E6B929CC318A009179E9 /* LaunchScreen.storyboard */; };
+		7647E6C429CC3339009179E9 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6C329CC3339009179E9 /* LineChartView.swift */; };
+		7647E6C629CC3456009179E9 /* KLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6C529CC3456009179E9 /* KLineChartView.swift */; };
+		7647E6C829CC3986009179E9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6C729CC3986009179E9 /* Colors.swift */; };
+		7647E6CA29CC3B9E009179E9 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7647E6C929CC3B9E009179E9 /* Color.xcassets */; };
+		7647E6CD29CC3D13009179E9 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6CC29CC3D13009179E9 /* LineChartViewController.swift */; };
+		7647E6CF29CC3D23009179E9 /* KLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6CE29CC3D23009179E9 /* KLineChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		7647E6B729CC318A009179E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7647E6BA29CC318A009179E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7647E6BC29CC318A009179E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7647E6C329CC3339009179E9 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		7647E6C529CC3456009179E9 /* KLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineChartView.swift; sourceTree = "<group>"; };
+		7647E6C729CC3986009179E9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7647E6C929CC3B9E009179E9 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		7647E6CC29CC3D13009179E9 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		7647E6CE29CC3D23009179E9 /* KLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		7647E6AD29CC3188009179E9 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				7647E6CB29CC3CFB009179E9 /* Controllers */,
+				7647E6C229CC3196009179E9 /* ChartViews */,
 				7647E6AE29CC3188009179E9 /* AppDelegate.swift */,
 				7647E6B029CC3188009179E9 /* SceneDelegate.swift */,
 				7647E6B229CC3188009179E9 /* ViewController.swift */,
@@ -63,8 +77,28 @@
 				7647E6B729CC318A009179E9 /* Assets.xcassets */,
 				7647E6B929CC318A009179E9 /* LaunchScreen.storyboard */,
 				7647E6BC29CC318A009179E9 /* Info.plist */,
+				7647E6C729CC3986009179E9 /* Colors.swift */,
+				7647E6C929CC3B9E009179E9 /* Color.xcassets */,
 			);
 			path = Chart;
+			sourceTree = "<group>";
+		};
+		7647E6C229CC3196009179E9 /* ChartViews */ = {
+			isa = PBXGroup;
+			children = (
+				7647E6C329CC3339009179E9 /* LineChartView.swift */,
+				7647E6C529CC3456009179E9 /* KLineChartView.swift */,
+			);
+			path = ChartViews;
+			sourceTree = "<group>";
+		};
+		7647E6CB29CC3CFB009179E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7647E6CC29CC3D13009179E9 /* LineChartViewController.swift */,
+				7647E6CE29CC3D23009179E9 /* KLineChartViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7647E6BB29CC318A009179E9 /* LaunchScreen.storyboard in Resources */,
+				7647E6CA29CC3B9E009179E9 /* Color.xcassets in Resources */,
 				7647E6B829CC318A009179E9 /* Assets.xcassets in Resources */,
 				7647E6B629CC3188009179E9 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7647E6C429CC3339009179E9 /* LineChartView.swift in Sources */,
+				7647E6C829CC3986009179E9 /* Colors.swift in Sources */,
 				7647E6B329CC3188009179E9 /* ViewController.swift in Sources */,
 				7647E6AF29CC3188009179E9 /* AppDelegate.swift in Sources */,
 				7647E6B129CC3188009179E9 /* SceneDelegate.swift in Sources */,
+				7647E6CF29CC3D23009179E9 /* KLineChartViewController.swift in Sources */,
+				7647E6CD29CC3D13009179E9 /* LineChartViewController.swift in Sources */,
+				7647E6C629CC3456009179E9 /* KLineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
