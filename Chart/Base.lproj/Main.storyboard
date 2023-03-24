@@ -132,14 +132,31 @@
         <!--柱状图-->
         <scene sceneID="9uw-9u-DKK">
             <objects>
-                <viewController id="aQC-lZ-mjA" sceneMemberID="viewController">
+                <viewController id="aQC-lZ-mjA" customClass="BarChartViewController" customModule="Chart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qvR-KQ-DdK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zI-il-X3F" customClass="BarChartView" customModule="Chart" customModuleProvider="target">
+                                <rect key="frame" x="12" y="153" width="369" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="REW-UL-uzk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tQa-Ye-9Zg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tQa-Ye-9Zg" firstAttribute="trailing" secondItem="6zI-il-X3F" secondAttribute="trailing" constant="12" id="KrW-bW-PZ7"/>
+                            <constraint firstItem="6zI-il-X3F" firstAttribute="top" secondItem="tQa-Ye-9Zg" secondAttribute="top" constant="50" id="Sac-xz-eZ0"/>
+                            <constraint firstItem="6zI-il-X3F" firstAttribute="leading" secondItem="tQa-Ye-9Zg" secondAttribute="leading" constant="12" id="Uvb-oK-YxF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="柱状图" id="gfw-r7-oqf"/>
+                    <connections>
+                        <outlet property="chart" destination="6zI-il-X3F" id="OHy-TX-eUt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="te9-03-792" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -173,7 +173,7 @@ extension KLineChartView {
     }
 
     @objc func tapAction(_ sender: UITapGestureRecognizer) {
-        guard let xAxisValues = dataSet?.xAxisValues else { return }
+//        guard let xAxisValues = dataSet?.xAxisValues else { return }
         let point = sender.location(in: self)
         guard let index = midRects.firstIndex(where: { $0.contains(point) }) else { return }
         debugPrint("点击", index)
@@ -220,5 +220,9 @@ extension String {
 
     func draw(in rect: CGRect, withAttributes attrs: [NSAttributedString.Key: Any]?) {
         asNSString.draw(in: rect, withAttributes: attrs)
+    }
+
+    func widthFor(font: UIFont, height: CGFloat) -> CGFloat {
+        return asNSString.boundingRect(with: CGSize(width: .greatestFiniteMagnitude, height: height), attributes: [.font: font], context: nil).width
     }
 }
