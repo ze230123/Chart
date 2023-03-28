@@ -21,6 +21,8 @@
 		7647E6CF29CC3D23009179E9 /* KLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6CE29CC3D23009179E9 /* KLineChartViewController.swift */; };
 		7647E6D129CD96DC009179E9 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6D029CD96DC009179E9 /* BarChartView.swift */; };
 		7647E6D329CD9B91009179E9 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647E6D229CD9B91009179E9 /* BarChartViewController.swift */; };
+		766059ED29D17C0200463542 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766059EC29D17C0200463542 /* PieChartView.swift */; };
+		766059EF29D17D7900463542 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766059EE29D17D7900463542 /* PieChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		7647E6CE29CC3D23009179E9 /* KLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineChartViewController.swift; sourceTree = "<group>"; };
 		7647E6D029CD96DC009179E9 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		7647E6D229CD9B91009179E9 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		766059EC29D17C0200463542 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		766059EE29D17D7900463542 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				7647E6C329CC3339009179E9 /* LineChartView.swift */,
 				7647E6C529CC3456009179E9 /* KLineChartView.swift */,
 				7647E6D029CD96DC009179E9 /* BarChartView.swift */,
+				766059EC29D17C0200463542 /* PieChartView.swift */,
 			);
 			path = ChartViews;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 				7647E6CC29CC3D13009179E9 /* LineChartViewController.swift */,
 				7647E6CE29CC3D23009179E9 /* KLineChartViewController.swift */,
 				7647E6D229CD9B91009179E9 /* BarChartViewController.swift */,
+				766059EE29D17D7900463542 /* PieChartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 				7647E6B329CC3188009179E9 /* ViewController.swift in Sources */,
 				7647E6AF29CC3188009179E9 /* AppDelegate.swift in Sources */,
 				7647E6B129CC3188009179E9 /* SceneDelegate.swift in Sources */,
+				766059ED29D17C0200463542 /* PieChartView.swift in Sources */,
+				766059EF29D17D7900463542 /* PieChartViewController.swift in Sources */,
 				7647E6D129CD96DC009179E9 /* BarChartView.swift in Sources */,
 				7647E6CF29CC3D23009179E9 /* KLineChartViewController.swift in Sources */,
 				7647E6CD29CC3D13009179E9 /* LineChartViewController.swift in Sources */,

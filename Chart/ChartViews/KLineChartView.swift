@@ -78,21 +78,6 @@ class KLineChartView: UIView {
         let yAxisRect = CGRect(x: 0, y: 0, width: yAxisWidth, height: rect.height - xAxisHeight)
         let contentRect = CGRect(x: yAxisWidth, y: 8, width: rect.width - yAxisWidth, height: rect.height - 8 - xAxisHeight)
 
-//        // x轴区域
-//        context.setFillColor(UIColor.red.cgColor)
-//        context.addRect(xAxisRect)
-//        context.fillPath()
-//
-//        // Y轴区域
-//        context.setFillColor(UIColor.blue.cgColor)
-//        context.addRect(yAxisRect)
-//        context.fillPath()
-//
-//        // 内容区域
-//        context.setFillColor(UIColor.green.cgColor)
-//        context.addRect(contentRect)
-//        context.fillPath()
-
         // 绘制Y轴
         context.move(to: CGPoint(x: yAxisRect.maxX, y: yAxisRect.minY))
         context.addLine(to: CGPoint(x: yAxisRect.maxX, y: yAxisRect.maxY))
@@ -186,7 +171,6 @@ extension KLineChartView {
     }
 }
 
-
 extension KLineChartView {
     struct DataValue {
         struct Value {
@@ -207,7 +191,7 @@ extension KLineChartView {
     }
 }
 
-extension Int {
+private extension Int {
     var kValue: String {
         return "\(self / 1000)k"
     }

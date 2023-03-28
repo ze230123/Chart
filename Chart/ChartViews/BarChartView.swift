@@ -7,9 +7,6 @@
 
 import UIKit
 
-
-
-
 class BarChartView: UIView {
     var configure = ChartConfiguration()
 

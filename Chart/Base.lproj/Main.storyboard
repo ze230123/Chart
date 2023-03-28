@@ -116,14 +116,31 @@
         <!--饼图-->
         <scene sceneID="jsg-ie-pg8">
             <objects>
-                <viewController id="NTv-Dr-Y78" sceneMemberID="viewController">
+                <viewController id="NTv-Dr-Y78" customClass="PieChartViewController" customModule="Chart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AKk-jR-g8L">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjO-Z5-yo3" customClass="PieChartView" customModule="Chart" customModuleProvider="target">
+                                <rect key="frame" x="12" y="153" width="369" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Joh-wr-ANa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CSh-1K-mIE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cjO-Z5-yo3" firstAttribute="leading" secondItem="CSh-1K-mIE" secondAttribute="leading" constant="12" id="1U3-w5-DJY"/>
+                            <constraint firstItem="CSh-1K-mIE" firstAttribute="trailing" secondItem="cjO-Z5-yo3" secondAttribute="trailing" constant="12" id="NR7-3H-IXH"/>
+                            <constraint firstItem="cjO-Z5-yo3" firstAttribute="top" secondItem="CSh-1K-mIE" secondAttribute="top" constant="50" id="TUx-b1-i1y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="饼图" id="Z60-7h-g8u"/>
+                    <connections>
+                        <outlet property="chart" destination="cjO-Z5-yo3" id="EjD-an-4bZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmL-5x-foA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,10 +219,27 @@
                     <view key="view" contentMode="scaleToFill" id="ESH-C6-uoL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lh7-UG-NEJ" customClass="LineChartView" customModule="Chart" customModuleProvider="target">
+                                <rect key="frame" x="12" y="153" width="369" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="aRl-S8-AIy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="07B-mC-lKg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="07B-mC-lKg" firstAttribute="trailing" secondItem="Lh7-UG-NEJ" secondAttribute="trailing" constant="12" id="Mcj-CU-LVV"/>
+                            <constraint firstItem="Lh7-UG-NEJ" firstAttribute="leading" secondItem="ESH-C6-uoL" secondAttribute="leading" constant="12" id="NfT-g7-Vko"/>
+                            <constraint firstItem="Lh7-UG-NEJ" firstAttribute="top" secondItem="07B-mC-lKg" secondAttribute="top" constant="50" id="aMS-PD-A71"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="折线图" id="pSw-zC-YuJ"/>
+                    <connections>
+                        <outlet property="chart" destination="Lh7-UG-NEJ" id="B6o-Rz-9D2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ba-7v-I4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
