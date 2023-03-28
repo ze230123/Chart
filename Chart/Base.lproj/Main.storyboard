@@ -122,10 +122,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjO-Z5-yo3" customClass="PieChartView" customModule="Chart" customModuleProvider="target">
-                                <rect key="frame" x="12" y="153" width="369" height="180"/>
+                                <rect key="frame" x="12" y="153" width="369" height="220"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="Joh-wr-ANa"/>
+                                    <constraint firstAttribute="height" constant="220" id="Joh-wr-ANa"/>
                                 </constraints>
                             </view>
                         </subviews>
